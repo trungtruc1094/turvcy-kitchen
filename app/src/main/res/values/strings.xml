@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Turvcy Kitchen</string>
+    <string name="title_activity_food_list">FoodList</string>
+    <string name="title_activity_menu_list">MenuList</string>
+    <string name="title_activity_edit_profile">EditProfile</string>
+
+
+    <string name="user_name">Eden Nguyen</string>
+    <string name="change_avatar">Change avatar</string>
+
+    <string name="food_list">Food List</string>
+    <string name="menu_list">Menu</string>
+
+    <string name="support">Support</string>
+    <string name="edit_profile">Profile</string>
+    <string name="about_us">About Us</string>
+
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+</resources>
