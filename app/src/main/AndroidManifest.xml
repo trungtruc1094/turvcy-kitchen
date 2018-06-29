@@ -17,14 +17,6 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FoodList"
-            android:label="@string/title_activity_food_list"
-            android:theme="@style/AppTheme" />
-        <activity
-            android:name=".MenuList"
-            android:label="@string/title_activity_menu_list"
-            android:theme="@style/AppTheme" />
-        <activity
             android:name=".EditProfile"
             android:label="@string/title_activity_edit_profile"
             android:theme="@style/AppTheme"></activity>
