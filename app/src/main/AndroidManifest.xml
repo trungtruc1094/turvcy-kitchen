@@ -19,6 +19,10 @@
         <activity
             android:name=".EditProfile"
             android:label="@string/title_activity_edit_profile"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".AddNewFood"
+            android:label="@string/title_activity_add_new_food"
             android:theme="@style/AppTheme"></activity>
     </application>
 

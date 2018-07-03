@@ -20,4 +20,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="order_activity">Order</string>
+    <string name="title_activity_add_new_food">AddNewFood</string>
 </resources>
