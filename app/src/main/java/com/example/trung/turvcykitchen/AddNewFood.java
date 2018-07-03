@@ -25,12 +25,16 @@ public class AddNewFood extends AppCompatActivity {
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(AddNewFood.this, MainActivity.class);
-                startActivity(intent);
                 finish();
                 overridePendingTransition(R.anim.stay, R.anim.godown);
             }
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        //super.onBackPressed();
+        finish();
+        overridePendingTransition(R.anim.stay, R.anim.godown);
+    }
 }
