@@ -1,11 +1,7 @@
 package com.example.trung.turvcykitchen;
 
 import android.content.Intent;
-import android.os.Build;
 import android.support.annotation.NonNull;
-import android.transition.Slide;
-import android.transition.Transition;
-import android.support.transition.TransitionInflater;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -39,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (id) {
             case R.id.food_list:
-                fragment = new FoodList();
+                fragment = new FoodListFragment();
                 break;
             case R.id.menu_list:
                 fragment = new MenuList();
@@ -84,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
 
         // Set Food fragment for Main Activity
-        Fragment food_fragment = new FoodList();
+        Fragment food_fragment = new FoodListFragment();
         addFragment(food_fragment);
 
 
