@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-
+    // Add fragment function
     public void addFragment(Fragment fragment){
         ft = getSupportFragmentManager().beginTransaction();
         ft.replace(R.id.frame_container, fragment);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.create_order:
                 Intent intent = new Intent(this, AddNewFood.class);
                 startActivity(intent);
-                overridePendingTransition(R.anim.goup, R.anim.stay);
+                overridePendingTransition(R.anim.slide_in_from_right_activity, R.anim.stay);
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

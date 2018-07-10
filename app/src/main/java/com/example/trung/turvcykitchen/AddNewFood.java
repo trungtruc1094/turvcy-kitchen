@@ -26,7 +26,8 @@ public class AddNewFood extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 finish();
-                overridePendingTransition(R.anim.stay, R.anim.godown);
+//                new AnimationObject(AddNewFood.this).animateView_shaking((ImageView) findViewById(R.id.exitBtn));
+                overridePendingTransition(R.anim.stay, R.anim.slide_out_to_right_fast);
             }
         });
     }
@@ -35,6 +36,6 @@ public class AddNewFood extends AppCompatActivity {
     public void onBackPressed() {
         //super.onBackPressed();
         finish();
-        overridePendingTransition(R.anim.stay, R.anim.godown);
+        overridePendingTransition(R.anim.stay, R.anim.slide_out_to_right_fast);
     }
 }

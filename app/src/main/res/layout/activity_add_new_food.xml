@@ -10,16 +10,14 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="180dp">
-        
+        android:layout_height="250dp">
+
         <ImageView
+            android:id="@+id/exitBtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/food"
-            android:scaleType="fitCenter"
-            android:alpha="0.7"
-            android:id="@+id/exitBtn"
-            />
+            android:background="@drawable/canhkhoqua"
+            android:scaleType="centerCrop" />
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
@@ -27,14 +25,59 @@
 
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:id="@+id/exitButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:src="@drawable/exit_button"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/starButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/checkButton"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/star"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/checkButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/check"
+                tools:ignore="VectorDrawableCompat" />
+
+            <ImageView
+                android:id="@+id/deleteButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/delete"
+                tools:ignore="VectorDrawableCompat"/>
+
+            <ImageView
+                android:id="@+id/uploadButton"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:srcCompat="@drawable/upload"
+                tools:ignore="VectorDrawableCompat" />
+
         </android.support.constraint.ConstraintLayout>
 
 
